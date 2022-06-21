@@ -1,0 +1,105 @@
+
+
+
+/* Global styles
+----------------------------------------------------------------- */
+body {
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 300px;
+}
+
+a{
+    color: #ffe66d
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 45px
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+
+/* Profile
+----------------------------------------------------------------- */
+header {
+    background-color: #2f3061;
+    color: #f7fff7;
+}
+
+
+
+
+/* Projects
+----------------------------------------------------------------- */
+.projects {
+    background-color: #f7fff7;
+}
+
+.projects a {
+    color: #2f3061;
+}
+
+.projects .btn {
+    color: #f7fff7;
+    background-color: #2f3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background-color: rgba(47,48,97,80%);
+}
+
+
+/* PWork Experience
+----------------------------------------------------------------- */
+.work-experience {
+    background-color: #a1c6d7;
+}
+
+
+
+/* Education
+----------------------------------------------------------------- */
+.education {
+    
+}
+
+
+
+
+/* Contact Info
+----------------------------------------------------------------- */
+footer {
+    background-color: #343434;
+    color: #f7fff7;
+}
