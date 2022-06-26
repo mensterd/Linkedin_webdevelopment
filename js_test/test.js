@@ -6,8 +6,10 @@ d.forEach(poep => {
 });
 
 
-const button = document.querySelector('button');
 
+// # backpack ###################################################################
+
+// maak een backpack object aan genaamd greenPack
 const greenPack = {
     name: 'Froggpack',
     color: 'Green',
@@ -39,6 +41,62 @@ const addPack = (currentPack) => {
 };
 
 
-
+// haal de main sectie op uit het html document
 const main = document.querySelector('main');
+// voeg de gegevens van greenPack toe aan de html code van het main object
 main.append(addPack(greenPack));
+
+
+// tip functie ###################################################################################
+
+
+// Append de berekende tip als <i> in een <section> toe aan het document
+const addTip = (tip) => {
+    const main = document.querySelector('main');
+
+    const newArticle = document.createElement('section');
+    newArticle.innerHTML = `
+        <i>Euro ${tip}</i>
+    `;
+    main.append(newArticle);
+}
+
+
+// Test met arrowfunctie
+
+
+arrow_test = (a) => {
+    a+10;
+    return a;
+}
+// Dit is hetzelfde als:
+// arrow_test = (a)   =>  a+10;
+// Of in dit geval, bij een enkel argument:
+// arrow_test = a => a+10;
+
+
+//  bereken 8$ van het bedrag en geef het door aan de functie die als argument wordt meegegeven
+const tipCalc = (bedrag, callback) => {
+    callback(bedrag*0.08);
+}
+
+// voer tipcalc functie uit met parameter bedrag en de uit te voeren functie
+tipCalc(23.65, addTip);
+
+
+// # Eventlister ##########################################################################
+
+
+const doSomething = (event) => {
+    console.log('Click!');
+    console.log(event);
+    console.log(arrow_test(12));
+}
+
+
+const button = document.querySelector('input#knop');
+console.log(button);
+
+button.addEventListener('click', (event => {
+    doSomething(event);
+}));
