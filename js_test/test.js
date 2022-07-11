@@ -84,7 +84,7 @@ const tipCalc = (bedrag, callback) => {
 tipCalc(23.65, addTip);
 
 
-// # Eventlister ##########################################################################
+// # Eventlistener ##########################################################################
 
 
 const doSomething = (event) => {
@@ -100,3 +100,30 @@ console.log(button);
 button.addEventListener('click', (event => {
     doSomething(event);
 }));
+
+// # Looping over objects ########################################################################
+
+const stuff = ['piggy', 'headlamp', 'pen', 'pencil', 'eraser'];
+
+const article = document.querySelector('.list-goes-here');
+let stuffList = document.createElement('ul');
+
+// for (let i = 0; i < stuff.length; i++) {
+//     let listItem = document.createElement('li');
+//     listItem.innerHTML = stuff[i];
+//     stuffList.append(listItem);
+// };
+
+// for (const item of stuff) {
+//     let listItem = document.createElement('li');
+//     listItem.innerHTML = item;
+//     stuffList.append(listItem);
+// };
+
+stuff.forEach((item) => {
+    let listItem = document.createElement('li');
+    listItem.innerHTML = item;
+    stuffList.append(listItem);
+});
+
+article.append(stuffList);

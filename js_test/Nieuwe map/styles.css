@@ -1,0 +1,40 @@
+.testr {
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.list-style {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+
+/*Van 09_02 javascript essentals demo/*
+
+.container {
+        width: 40rem;
+        padding: 2rem 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 2rem;
+        background-color: hsl(0, 0%, 85%);
+      }
+	  
+ body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Courier New", Courier, monospace;
+      }
